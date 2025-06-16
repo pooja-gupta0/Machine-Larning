@@ -3,15 +3,16 @@ X = [15, 20, 35, 45, 50, 65, 70, 85, 90]
 y = [5,13,11,27,32,39,43,51,54]
 
 # Split into train and test
-X_train = [10, 25, 30, 45]
-y_train = [5,13,11,27]
+X_train = [10, 20, 35, 45,50,65]
+y_train = [5,13,11,27,32,39]
 
-X_test = [50,65,70,85,90]
-y_test = [32,39,43,51,54]
+X_test = [70,85,90]
+y_test = [43,51,54]
 
 # Mean Function
 def mean(values):
-    return sum(values) / len(values)
+    
+    return sum(values)/len(values)
 
 # Numerator 
 def covariance(x, x_mean, y, y_mean):
